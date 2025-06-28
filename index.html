@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduSafe - Empowering Safe Learning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fbff;
+      color: #333;
+    }
+
+    header {
+      background-color: #005792;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      background-color: #003f63;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #005792;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      padding: 0.5rem 0;
+    }
+
+    .chatbox {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-top: 1rem;
+      background: #f0f8ff;
+    }
+
+    footer {
+      background-color: #003f63;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EduSafe – Empowering Safe Learning</h1>
+
+    <p>Accessible Learning & Cyber Awareness for All</p>
+  </header>
+
+<div style="background-color: #fff3cd; border-left: 6px solid #ffa500; padding: 1rem; margin: 1rem; border-radius: 8px; font-size: 1.1rem;">
+  👋 <strong>Welcome to EduSafe!</strong>  
+  <br>
+  This website helps kids and parents find free learning tools and stay safe online. Click your language and start exploring!
+</div>
+
+  <nav>
+    <a href="#resources">Learning</a>
+    <a href="#safety">Cyber Safety</a>
+    <a href="#girls">Girl Power</a>
+    <a href="#faq">Ask Sakhi</a>
+  </nav>
+
+
+<section id="resources">
+  <h2>📚 Free Learning Resources</h2>
+
+<!-- 🌐 Language Toggle Buttons -->
+<div style="text-align:center; margin-bottom: 1rem;">
+  <button onclick="showLang('en')">🇬🇧 English</button>
+  <button onclick="showLang('hi')">🇮🇳 हिंदी</button>
+  <button onclick="showLang('ml')">🇲🇻 മലയാളം</button>
+</div>
+
+<!-- 🇬🇧 English -->
+<div id="lang-en">
+  <h3>👶 For Primary School Students</h3>
+  <ul style="font-size: 1.1rem;">
+    <li>🎲 <a href="https://www.toffees.com/" target="_blank">Toffees.com</a> – Games & early math</li>
+    <li>📚 <a href="https://learn.khanacademy.org/khan-academy-kids/" target="_blank">Khan Academy Kids</a> – Reading, math & emotions</li>
+    <li>🔤 <a href="https://www.starfall.com/" target="_blank">Starfall</a> – Fun with phonics</li>
+    <li>🧠 <a href="https://www.abcya.com/" target="_blank">ABCya!</a> – Educational games (PreK–6)</li>
+    <li>📘 <a href="https://www.ncert.nic.in/ebooks.html" target="_blank">NCERT eBooks</a> – Free textbooks (English/Hindi)</li>
+  </ul>
+</div>
+
+<!-- 🇮🇳 Hindi -->
+<div id="lang-hi" style="display:none;">
+  <h3>👶 प्राथमिक छात्रों के लिए</h3>
+  <ul style="font-size: 1.1rem;">
+    <li>🎲 <a href="https://www.toffees.com/" target="_blank">Toffees.com</a> – खेल और प्रारंभिक गणित</li>
+    <li>📚 <a href="https://learn.khanacademy.org/khan-academy-kids/" target="_blank">Khan Academy Kids</a> – पढ़ना, गणित और भावनात्मक शिक्षा</li>
+    <li>🔤 <a href="https://www.starfall.com/" target="_blank">Starfall</a> – फन फॉनिक्स गेम्स</li>
+    <li>🧠 <a href="https://www.abcya.com/" target="_blank">ABCya!</a> – शैक्षिक खेल (PreK–6)</li>
+    <li>📘 <a href="https://www.ncert.nic.in/ebooks.html" target="_blank">NCERT ई-पुस्तकें</a> – मुफ्त किताबें (हिंदी/अंग्रेजी)</li>
+  </ul>
+</div>
+
+<!-- 🇲🇻 Malayalam -->
+<div id="lang-ml" style="display:none;">
+  <h3>👶 പ്രാഥമിക വിദ്യാർത്ഥികൾക്കായി</h3>
+  <ul style="font-size: 1.1rem;">
+    <li>🎲 <a href="https://www.toffees.com/" target="_blank">Toffees.com</a> – ഗെയിംകളും പ്രാരംഭ ഗണിതവും</li>
+    <li>📚 <a href="https://learn.khanacademy.org/khan-academy-kids/" target="_blank">Khan Academy Kids</a> – വായന, ഗണിതം, വികാര ബോധം</li>
+    <li>🔤 <a href="https://www.starfall.com/" target="_blank">Starfall</a> – ശബ്ദങ്ങളുമായി കളിച്ചുകൊണ്ട് പഠിക്കുക</li>
+    <li>🧠 <a href="https://www.abcya.com/" target="_blank">ABCya!</a> – വിദ്യാഭ്യാസ ഗെയിമുകൾ (PreK–6)</li>
+    <li>📘 <a href="https://www.ncert.nic.in/ebooks.html" target="_blank">NCERT ഇബുക്കുകൾ</a> – സൗജന്യ പുസ്തകങ്ങൾ (ഇംഗ്ലീഷ്/ഹിന്ദി)</li>
+  </ul>
+</div>
+
+<!-- Language Switching Script -->
+<script>
+  function showLang(lang) {
+    document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('lang-hi').style.display = lang === 'hi' ? 'block' : 'none';
+    document.getElementById('lang-ml').style.display = lang === 'ml' ? 'block' : 'none';
+  }
+</script>
+
+
+  <h3>🎓 For Middle & High School Students</h3>
+  <ul>
+    <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a> – Math, Science, Economics & more</li>
+    <li><a href="https://nptel.ac.in/" target="_blank">NPTEL</a> – Free courses from IITs (India)</li>
+    <li><a href="https://www.byjus.com/free-online-courses/" target="_blank">BYJU’S Free Courses</a> – School-level content</li>
+    <li><a href="https://spoken-tutorial.org/" target="_blank">Spoken Tutorial</a> – Coding and STEM tutorials in local languages</li>
+  </ul>
+
+  <h3>💻 Learn to Code (All Ages)</h3>
+  <ul>
+    <li><a href="https://www.code.org/" target="_blank">Code.org</a> – Beginner-friendly coding for all ages</li>
+    <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> – Learn programming interactively</li>
+    <li><a href="https://scratch.mit.edu/" target="_blank">Scratch</a> – Visual coding for kids</li>
+    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> – Learn web development for free</li>
+  </ul>
+</section>
+
+  <section id="girls">
+    <h2>👧 Girl Power</h2>
+    <p>Opportunities, inspiration, and safety for every girl:</p>
+    <ul>
+      <li><a href="https://www.buddy4study.com/scholarships" target="_blank">Scholarships for Girls</a></li>
+      <li>Learn self-defense online and offline safety tips</li>
+      <li>Join women-in-tech communities and coding clubs</li>
+    </ul>
+  </section>
+
+  <section id="faq">
+    <h2>💬 Ask Sakhi – Your Digital Buddy</h2>
+    <div class="chatbox" id="chat">
+      <p><strong>User:</strong> How can I report online abuse?</p>
+      <p><strong>Sakhi:</strong> You can report it at <a href="https://cybercrime.gov.in" target="_blank">cybercrime.gov.in</a> or call 1930.</p>
+
+      <p><strong>User:</strong> Where can I learn coding for free?</p>
+      <p><strong>Sakhi:</strong> Try <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> or <a href="https://www.codecademy.com/" target="_blank">CodeCademy</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    🚨 Emergency: Cyber Helpline 1930 | Childline: 1098 | Women Helpline: 181  
+    <br>Made with 💙 for the Safe Cyberspace Challenge 2025
+  </footer>
+
+</body>
+</html>
